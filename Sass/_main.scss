@@ -19,10 +19,11 @@
                 position: absolute;
                 width: 3.6rem;
                 height: 3.6rem;
-                top: 1.5rem;
+                top: 1.6rem;
                 right: 2.5rem;
                 background: url(../images/arrow-right.png) center  no-repeat;
             }
+           
         }
     }
 }
@@ -73,6 +74,9 @@
             top: .7rem;
             right: 10rem;
             background: url(../images/arrow-right.png) center  no-repeat;
+        }
+        &:hover::before {
+            right: 8rem;
         }
     }
 }
@@ -278,6 +282,194 @@
         }
         &_bottom {
             margin-top: 5rem;
+        }
+    }
+}
+.stat {
+    margin-top: 8rem;
+    background-color: #F4F0EC;
+    &__items {
+        padding: 15.3rem 12rem 14rem 12rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1.6rem;
+    }
+    &__item {
+        width: 28.8rem;
+        &:not(:last-child){
+            border-right: .1rem solid #CDA274;
+            padding-right: 2rem;
+        }
+        & span {
+            display: block;
+        }
+        &-sum {
+            font-family: 'DM Serif Display';
+            font-size: 8.5rem;
+            line-height: 1.5;
+            text-align: center;
+            letter-spacing: 1.7px;
+            color: #CDA274;
+        }
+        &-text {
+            font-size: 2.2rem;
+            line-height: 1.5;
+            text-align: center;
+            letter-spacing: 0.22px;
+            color: #4D5053;
+        }
+    }
+}
+.blogs {
+    margin-top: 15rem;
+    &__title {
+        font-size: 4.8rem;
+        line-height: 1.3;
+        text-align: center;
+        letter-spacing: 0.22px;
+    }
+    &__text {
+        margin-top: 2rem;
+        font-size: 2.2rem;
+        text-align: center;
+        letter-spacing: 0.22px;
+    }
+    &__items {
+        margin-top: 7rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    &__item {
+        padding: 2.1rem 2.1rem 4rem 2.1rem;
+        max-width: 38.6rem;
+        display: flex;
+        flex-direction: column;
+        border: .1rem solid #ccd0d6;
+        border-radius: 15%;
+        &-title {
+            margin-top: 1.4rem;
+            font-family: 'DM Serif Display';
+            font-size: 2.5rem;
+            letter-spacing: 0.5px;
+            color: #292F36;
+        }
+        &-img_kitchen {
+            position: relative;
+            &::before {
+                content: 'Kitchen Design';
+                position: absolute;
+                left: 1rem;
+                bottom: 2rem;
+                padding: 1rem;
+                background-color: #FFFFFF;
+                font-family: 'Jost';
+                font-size: 1.5rem;
+                line-height: 1.6;
+                letter-spacing: 0.22px;
+                color: #4D5053;
+                border-radius: 1rem 1rem 1rem 0;
+            }
+        }
+        &-img_living {
+            position: relative;
+            &::before {
+                content: 'Living Room';
+                position: absolute;
+                left: 1rem;
+                bottom: 2rem;
+                padding: 1rem;
+                background-color: #FFFFFF;
+                font-family: 'Jost';
+                font-size: 1.5rem;
+                line-height: 1.6;
+                letter-spacing: 0.22px;
+                color: #4D5053;
+                border-radius: 1rem 1rem 1rem 0;
+            }
+        }
+        &-img_minimal {
+            position: relative;
+            &::before {
+                content: 'Minimalist Interior';
+                position: absolute;
+                left: 1rem;
+                bottom: 2rem;
+                padding: 1rem;
+                background-color: #FFFFFF;
+                font-family: 'Jost';
+                font-size: 1.5rem;
+                line-height: 1.6;
+                letter-spacing: 0.22px;
+                color: #4D5053;
+                border-radius: 1rem 1rem 1rem 0;
+            }
+        }
+        &-desc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-desc {
+            display: flex;
+            justify-content: space-between;
+            &__text {
+                font-family: 'Jost';
+                font-size: 1.6rem;
+                letter-spacing: 0.22px;
+                color: #4D5053;
+            }
+            & img {
+                width: 5.2rem;
+                height: 5.2rem;
+            }
+        }
+        &-bottom {
+            margin-top: 2rem;
+        }
+    }
+
+}
+.join {
+    margin-top: 10rem;
+    &__wrap {
+        padding: 10rem 3.3rem 9.5rem ;
+        background-color: #292F36;
+        border-radius: 7rem;
+    }
+    &__title {
+        margin-top: 2rem;
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #FFFFFF;
+    }
+    &__text {
+        margin-top: 1rem;
+        font-size: 2.2rem;
+        text-align: center;
+        letter-spacing: 0.22px;
+        color: #FFFFFF;
+    }
+    &__button {
+        margin: 0 auto;
+        margin-top: 5.2rem;
+        display: block;
+        padding: 2.1rem 8rem 2.3rem 2.4rem;
+        background-color: #CDA274;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 5rem;
+            height: 2rem;
+            top: 2.5rem;
+            right: 1.8rem;
+            background: url(../images/arrow-right_black.webp) center  no-repeat;
+        }
+        &:hover::before {
+            right: .5rem;
         }
     }
 }

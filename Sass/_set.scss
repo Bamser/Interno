@@ -40,11 +40,13 @@ textarea {
 a {
     color: unset;
     text-decoration: none;
+    transition-duration: 350ms;
 }
 
 a:hover {
     text-decoration: none;
     color: #CDA274;
+    transform: scale(1.2);
 }
 
 button,
@@ -93,6 +95,14 @@ button {
     text-align: inherit;
     padding: 0;
     background-color: inherit;
+    transition-duration: 350ms;
+    &:hover {
+        background-color: #fff;
+        color: #4D5053;
+    }
+    &:hover::before {
+        right: 2rem;
+    }
 }
 
 ul {

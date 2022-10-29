@@ -40,11 +40,13 @@ textarea {
 a {
   color: unset;
   text-decoration: none;
+  transition-duration: 350ms;
 }
 
 a:hover {
   text-decoration: none;
   color: #CDA274;
+  transform: scale(1.2);
 }
 
 button,
@@ -97,6 +99,14 @@ button {
   text-align: inherit;
   padding: 0;
   background-color: inherit;
+  transition-duration: 350ms;
+}
+button:hover {
+  background-color: #fff;
+  color: #4D5053;
+}
+button:hover::before {
+  right: 2rem;
 }
 
 ul {
@@ -159,6 +169,70 @@ input[type=number] {
   letter-spacing: 0.4px;
 }
 
+.footer {
+  margin-top: 10rem;
+}
+.footer__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer__item-logo {
+  max-width: 39.3rem;
+}
+.footer__item a {
+  font-family: "Jost";
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  color: #4D5053;
+}
+.footer__item a:hover {
+  color: #CDA274;
+}
+.footer__item-title {
+  font-size: 2.5rem;
+  letter-spacing: 0.22px;
+  text-align: left;
+}
+.footer__item-text {
+  font-size: 2.2rem;
+  letter-spacing: 0.22px;
+}
+.footer__item-logo img {
+  max-width: 17.7rem;
+  max-height: 5rem;
+}
+.footer__item-social {
+  display: flex;
+  gap: 4rem;
+}
+.footer__item-social img {
+  width: 1.7rem;
+  height: 1.7rem;
+  transition-duration: 350ms;
+}
+.footer__item-social img:hover {
+  transform: scale(1.3);
+}
+.footer__down {
+  margin-top: 5rem;
+  padding-top: 3.5rem;
+  text-align: center;
+  font-family: "Jost";
+  font-size: 2.2rem;
+  letter-spacing: 0.22px;
+  border-top: 1px solid #E5E5E5;
+}
+.footer__down a {
+  color: #CDA274;
+}
+
 .hero {
   margin: 5rem auto;
   width: 144rem;
@@ -183,7 +257,7 @@ input[type=number] {
   position: absolute;
   width: 3.6rem;
   height: 3.6rem;
-  top: 1.5rem;
+  top: 1.6rem;
   right: 2.5rem;
   background: url(../images/arrow-right.png) center no-repeat;
 }
@@ -238,6 +312,9 @@ input[type=number] {
   top: 0.7rem;
   right: 10rem;
   background: url(../images/arrow-right.png) center no-repeat;
+}
+.subhero__button:hover::before {
+  right: 8rem;
 }
 
 .design {
@@ -444,4 +521,194 @@ input[type=number] {
 }
 .projects__card_bottom {
   margin-top: 5rem;
+}
+
+.stat {
+  margin-top: 8rem;
+  background-color: #F4F0EC;
+}
+.stat__items {
+  padding: 15.3rem 12rem 14rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+.stat__item {
+  width: 28.8rem;
+}
+.stat__item:not(:last-child) {
+  border-right: 0.1rem solid #CDA274;
+  padding-right: 2rem;
+}
+.stat__item span {
+  display: block;
+}
+.stat__item-sum {
+  font-family: "DM Serif Display";
+  font-size: 8.5rem;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 1.7px;
+  color: #CDA274;
+}
+.stat__item-text {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #4D5053;
+}
+
+.blogs {
+  margin-top: 15rem;
+}
+.blogs__title {
+  font-size: 4.8rem;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.22px;
+}
+.blogs__text {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.22px;
+}
+.blogs__items {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.blogs__item {
+  padding: 2.1rem 2.1rem 4rem 2.1rem;
+  max-width: 38.6rem;
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid #ccd0d6;
+  border-radius: 15%;
+}
+.blogs__item-title {
+  margin-top: 1.4rem;
+  font-family: "DM Serif Display";
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  color: #292F36;
+}
+.blogs__item-img_kitchen {
+  position: relative;
+}
+.blogs__item-img_kitchen::before {
+  content: "Kitchen Design";
+  position: absolute;
+  left: 1rem;
+  bottom: 2rem;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  font-family: "Jost";
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.22px;
+  color: #4D5053;
+  border-radius: 1rem 1rem 1rem 0;
+}
+.blogs__item-img_living {
+  position: relative;
+}
+.blogs__item-img_living::before {
+  content: "Living Room";
+  position: absolute;
+  left: 1rem;
+  bottom: 2rem;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  font-family: "Jost";
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.22px;
+  color: #4D5053;
+  border-radius: 1rem 1rem 1rem 0;
+}
+.blogs__item-img_minimal {
+  position: relative;
+}
+.blogs__item-img_minimal::before {
+  content: "Minimalist Interior";
+  position: absolute;
+  left: 1rem;
+  bottom: 2rem;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  font-family: "Jost";
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.22px;
+  color: #4D5053;
+  border-radius: 1rem 1rem 1rem 0;
+}
+.blogs__item-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogs__item-desc {
+  display: flex;
+  justify-content: space-between;
+}
+.blogs__item-desc__text {
+  font-family: "Jost";
+  font-size: 1.6rem;
+  letter-spacing: 0.22px;
+  color: #4D5053;
+}
+.blogs__item-desc img {
+  width: 5.2rem;
+  height: 5.2rem;
+}
+.blogs__item-bottom {
+  margin-top: 2rem;
+}
+
+.join {
+  margin-top: 10rem;
+}
+.join__wrap {
+  padding: 10rem 3.3rem 9.5rem;
+  background-color: #292F36;
+  border-radius: 7rem;
+}
+.join__title {
+  margin-top: 2rem;
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #FFFFFF;
+}
+.join__text {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #FFFFFF;
+}
+.join__button {
+  margin: 0 auto;
+  margin-top: 5.2rem;
+  display: block;
+  padding: 2.1rem 8rem 2.3rem 2.4rem;
+  background-color: #CDA274;
+  position: relative;
+}
+.join__button::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 2rem;
+  top: 2.5rem;
+  right: 1.8rem;
+  background: url(../images/arrow-right_black.webp) center no-repeat;
+}
+.join__button:hover::before {
+  right: 0.5rem;
 }
